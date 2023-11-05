@@ -59,7 +59,7 @@ Para testear todas las rutas en Postman:
 
 > Campos a rellenar en headers:
 
-- Authorization : Bearer <aquí copiar token>
+- Authorization : Bearer  _aquí copiar token_
 - Accept: application/json
   
 > Campos a rellenar en body (form-data):
@@ -82,7 +82,7 @@ Para testear todas las rutas en Postman:
 
 > Campos a rellenar en headers:
 
-- Authorization : Bearer <aquí copiar token>
+- Authorization : Bearer  _aquí copiar token_
 - Accept: application/json
 
 > Campos a rellenar en body (form-data):
@@ -99,7 +99,7 @@ Para testear todas las rutas en Postman:
 
 > Campos a rellenar en headers:
 
-- Authorization : Bearer <aquí copiar token>
+- Authorization : Bearer  _aquí copiar token_
 - Accept: application/json
 
 > Devuelve un listado de todas las Skins que ha adquirido un usuario, incluyendo todos sus datos, incluso los que no se guardan en la base de datos.
@@ -112,7 +112,7 @@ Para testear todas las rutas en Postman:
 
 > Campos a rellenar en headers:
 
-- Authorization : Bearer <aquí copiar token>
+- Authorization : Bearer  _aquí copiar token_
 - Accept: application/json
 
 > La id debe ser la de una de las skins compradas por el usuario autentificado y guardadas en la base de datos.
@@ -159,7 +159,7 @@ Para testear todas las rutas en Postman:
 
 > Campos a rellenar en headers:
 
-- Authorization : Bearer <aquí copiar token>
+- Authorization : Bearer  _aquí copiar token_
 - Accept: application/json
 
 > Campos a rellenar en body (form-data):
