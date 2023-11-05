@@ -16,6 +16,7 @@ Para testear todas las rutas en Postman:
 ## Endpoints 
 
 #### POST /register
+
 > Abierto
 
 > Permite registrar a un usuario.
@@ -43,6 +44,7 @@ Para testear todas las rutas en Postman:
 > Devuelve al usuario registrado juto con su access token.
 
 #### POST /logout
+
 > Requiere autentificación.
 
 > Desactiva el token del usuario.
@@ -137,11 +139,24 @@ Para testear todas las rutas en Postman:
 - color : nuevo color según colores disponibles de esta Skin.
 - _method: put
   
-> Devuelve la skin actualizada con todos sus datos, incluso los que no se guardan en la base de datos.
+> Devuelve la skin actualizada y con todos sus datos, incluso los que no se guardan en la base de datos.
 
 ####  POST /skins/gadget 
 
 > Requiere autentificación.
+
+> Permite a un usuario cambiar el estado de su gadget (visto/no visto).
+
+> Campos a rellenar en headers:
+
+- Authorization : Bearer <aquí copiar token>
+- Accept: application/json
+
+> Campos a rellenar en body (form-data):
+
+- code : code de la skin de la que se desa cambiar el estado del gadget.
+ 
+> Devuelve la skin actualizada y con todos sus datos, incluso los que no se guardan en la base de datos.
 
 ### Instalación del proyecto 
 
@@ -154,6 +169,17 @@ En terminal VSC:
 php... 
 
 php artisan passport:install
+
+php artisan serve
+
+(*) Nota:
+
+Si se desea testear el método que envia un email de pago al usuario al realizar la compra:
+
+- descomentar código.
+- abrir cuenta propia en Mailtrap.
+- Configurar archivo .env con datos cuenta propia.
+- Ejecutar endpoint buy y confirmar que se ha enviado el mail en Mailtrap.
 
 
 
