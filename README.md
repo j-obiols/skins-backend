@@ -111,9 +111,33 @@ Para testear todas las rutas en Postman:
 
 > Requiere autentificación.
 
-####  POST /skins/color 
+> Permite a un usuario autentificado consultar una de sus skins.
+
+> Campos a rellenar en headers:
+
+- Authorization : Bearer <aquí copiar token>
+- Accept: application/json
+
+> Devuelve la skin consultada con todos sus datos, incluso los que no se guardan en la base de datos.
+
+####  POST /skins/color (en rutas está definido PUT como establecía el enunciado)
 
 > Requiere autentificación.
+
+> Permite a un usuario autentificado cambiar el color de uno de sus skins.
+
+> Campos a rellenar en headers:
+
+- Authorization : Bearer <aquí copiar token>
+- Accept: application/json
+
+> Campos a rellenar en body (form-data):
+
+- code : code de la skin de la que se desa cambiar el color.
+- color : nuevo color según colores disponibles de esta Skin.
+- _method: put
+  
+> Devuelve la skin actualizada con todos sus datos, incluso los que no se guardan en la base de datos.
 
 ####  POST /skins/gadget 
 
