@@ -187,15 +187,21 @@ Editar el .env file, añadiendo el nombre de la base de datos:
 
 Crear una base de datos vacía en localhost con el mismo nombre.
 
+Ejecutar:
+
 ```php artisan migrate``` 
+
+```php artisan passport:install```
 
 ```php artisan serve```
 
 ## Testeando desde Visual Studio Code
 
-En la terminal, escribir:
+En la terminal, escribir si es necesario:
 
 ```php artisan passport:install```
+
+Para ejecutar todos los tests:
 
 ```php artisan test```
 
@@ -205,13 +211,15 @@ En la terminal, escribir:
 
 Abrir la base de datos **skins_backend** en **phpMyAdmin** para poder ir haciendo consultas.
  
-In terminal Visual Studio Code, run:
+En la terminal de Visual Studio Code, escribir si es necesario:
 
 ```php artisan migrate```
 
 ```php artisan passport:install```
 
 ```php artisan serve``` 
+
+Acceder a Postman y testear los endpoints.
 
 ## Nota (*)
 
