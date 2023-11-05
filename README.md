@@ -5,7 +5,7 @@ Jump2Digital 2023 Backend Exercise
 
 Las Skins disponibles y todos sus datos se leen desde un archivo JSON.  
 
-Este archivo JSON puede ir creciendo, pero para el buen funcionamento de la API es imprescindible que no se eliminen Skins. 
+Este archivo JSON puede ir creciendo, pero para el buen funcionamento de la API es imprescindible que no se eliminen Skins y que no se modifiquen sus códigos.
 
 También es imprescindible que todos los campos estén definidos, aunque en la API se han creado métodos de control para evitar 
 inconsistencia de datos. 
