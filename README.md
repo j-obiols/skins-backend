@@ -17,51 +17,101 @@ Para testear todas las rutas en Postman:
 
 #### POST /register
 > Abierto
-> Permite registrar a un usuario. 
+
+> Permite registrar a un usuario.
+
 > Campos a rellenar en body (form-data):
+
 - email
 - nickname (min:3)
 - password (min:8)
 - password_confirmation
+  
 > Devuelve un mensaje de confirmación.
-#### POST /login
+
+#### POST /login 
+
 > Abierto
+
 > Permite acceder a un usuario registrado.
+
 > Campos a rellenar en body (form-data):
+
 - email
 - password
+  
 > Devuelve al usuario registrado juto con su access token.
 
 #### POST /logout
 > Requiere autentificación.
+
 > Desactiva el token del usuario.
-> Camos a rellenas en headers:
+
+> Campos a rellenar en headers:
+
 - Authorization : Bearer <aquí copiar token>
 - Accept: application/json
+  
 > Campos a rellenar en body (form-data):
+
 - submit (sin value)
-> Devuelve mensaje de confirmación.
+  
+> Devuelve un mensaje de confirmación.
 
 #### GET /skins/available
 
- Devuelve una lista de todas las skins disponibles.
-
- Ruta abierta a todo el público. 
+>  Ruta abierta a todo el público. 
+ 
+>  Devuelve un listado de las skins disponibles con todos sus datos.
 
 ####  POST /skins/buy
 
-####  GET /skins/myskins
+> Requiere autentificación.
 
-####  DEL /skins/delete/{id}
+> Permite comprar una Skin.
 
-####  GET /skin/getskin/{id}
+> Campos a rellenar en headers:
 
-####  POST /skins/color
+- Authorization : Bearer <aquí copiar token>
+- Accept: application/json
 
-####  POST /skins/gadget
+> Campos a rellenar en body (form-data):
+
+-code : code de una skin disponible según listado
+
+> Devuelve un mensaje de confirmación.
+
+####  GET /skins/myskins 
+
+> Requiere autentificación.
+
+####  DEL /skins/delete/{id} 
+
+> Requiere autentificación.
+
+####  GET /skin/getskin/{id} 
+
+> Requiere autentificación.
+
+####  POST /skins/color 
+
+> Requiere autentificación.
+
+####  POST /skins/gadget 
+
+> Requiere autentificación.
 
 ### Instalación del proyecto 
 
 Descargar el repositorio.
+
+Abrir en Visual Studio Code.
+
+En terminal VSC:
+
+php... 
+
+php artisan passport:install
+
 
 
