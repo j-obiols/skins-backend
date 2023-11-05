@@ -1,13 +1,19 @@
 ## Skins Backend
 Jump2Digital 2023 Backend Exercise 
 
-Skins Backend es una API que permite a los usuarios comprar Skins, que se almacenarán en una base de datos.
-Las skins disponibles y todos sus datos se leen desde un archivo JSON. 
-Este archivo puede ir creciendo, pero para el buen funcionamento de la API es necesario que no se eliminen Skins.
+**API** que permite a los usuarios **comprar Skins**, que se almacenarán en una base de datos. 
+
+Las Skins disponibles y todos sus datos se leen desde un archivo JSON.  
+
+Este archivo JSON puede ir creciendo, pero para el buen funcionamento de la API es imprescindible que no se eliminen Skins. 
+
 También es imprescindible que todos los campos estén definidos, aunque en la API se han creado métodos de control para evitar 
-inconsistencia de datos.
-Solamente se almacenan las Skins compradas por los usuarios, con los datos de estado: pagada, activa, status de color, status de gadget, 
+inconsistencia de datos. 
+
+Solamente se almacenan las Skins compradas por los usuarios, con sus datos de estado: pagada, activa, status de color, status de gadget, 
 más los datos de identificación necesarios.
+
+Incluye tests de la mayoría de las funciones, aunque falta añadir tests de algunas casuísticas.
 
 Para testear todas las rutas en Postman:
 
@@ -15,7 +21,7 @@ Para testear todas las rutas en Postman:
 
 ## Endpoints 
 
-#### POST /register
+### POST /register
 
 > Abierto
 
@@ -30,7 +36,7 @@ Para testear todas las rutas en Postman:
   
 > Devuelve un mensaje de confirmación.
 
-#### POST /login 
+### POST /login 
 
 > Abierto
 
@@ -43,7 +49,7 @@ Para testear todas las rutas en Postman:
   
 > Devuelve al usuario registrado junto con su access token.
 
-#### POST /logout
+### POST /logout
 
 > Requiere autentificación.
 
@@ -60,13 +66,13 @@ Para testear todas las rutas en Postman:
   
 > Devuelve un mensaje de confirmación.
 
-#### GET /skins/available
+### GET /skins/available
 
 >  Ruta abierta a todo el público. 
  
 >  Devuelve un listado de todas las Skins efectivamente disponibles con todos sus datos.
 
-####  POST /skins/buy
+###  POST /skins/buy
 
 > Requiere autentificación.
 
@@ -83,7 +89,7 @@ Para testear todas las rutas en Postman:
 
 > Devuelve un mensaje de confirmación.
 
-####  GET /skins/myskins 
+###  GET /skins/myskins 
 
 > Requiere autentificación.
 
@@ -96,7 +102,7 @@ Para testear todas las rutas en Postman:
 
 > Devuelve un listado de todas las Skins que ha adquirido un usuario, incluyendo todos sus datos, incluso los que no se guardan en la base de datos.
 
-####  DEL /skins/delete/{id} 
+###  DEL /skins/delete/{id} 
 
 > Requiere autentificación.
 
@@ -109,7 +115,7 @@ Para testear todas las rutas en Postman:
 
 > Devuelve un mensaje de confirmación.
 
-####  GET /skin/getskin/{id} 
+###  GET /skin/getskin/{id} 
 
 > Requiere autentificación.
 
@@ -122,7 +128,7 @@ Para testear todas las rutas en Postman:
 
 > Devuelve la Skin consultada con todos sus datos, incluso los que no se guardan en la base de datos.
 
-####  POST /skins/color (en rutas está definido PUT como establecía el enunciado)
+###  POST /skins/color (en rutas está definido PUT como establecía el enunciado)
 
 > Requiere autentificación.
 
@@ -141,7 +147,7 @@ Para testear todas las rutas en Postman:
   
 > Devuelve la Skin actualizada y con todos sus datos, incluso los que no se guardan en la base de datos.
 
-####  POST /skins/gadget 
+###  POST /skins/gadget 
 
 > Requiere autentificación.
 
@@ -158,7 +164,7 @@ Para testear todas las rutas en Postman:
  
 > Devuelve la Skin actualizada y con todos sus datos, incluso los que no se guardan en la base de datos.
 
-### Instalación del proyecto 
+## Instalación del proyecto 
 
 Descargar el repositorio.
 
@@ -172,12 +178,12 @@ php artisan passport:install
 
 php artisan serve
 
-(*) Nota:
+## Nota (*)
 
-Si se desea testear el método que envia un email de pago al usuario al realizar la compra:
+Si se desea testear el método que envia un **email con enlace de pago** al usuario al realizar la compra:
 
-- descomentar código.
+- descomentar el código correpondiente en el método buy() de SkinController.
 - abrir cuenta propia en Mailtrap.
-- Configurar archivo .env con datos cuenta propia.
-- Ejecutar endpoint buy y confirmar que se ha enviado el mail en Mailtrap.
+- configurar archivo .env con datos cuenta propia.
+- ejecutar en Postman el endpoint /skins/buy, y confirmar en Mailtrap que se ha enviado el mail.
 
