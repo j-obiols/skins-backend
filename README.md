@@ -15,6 +15,8 @@ más los datos de identificación necesarios.
 
 Incluye tests de la mayoría de las funciones, aunque falta añadir tests de algunas casuísticas.
 
+No incluye seeders.
+
 Para testear todas las rutas en Postman:
 
 ### http://127.0.0.1:8000/api
@@ -85,7 +87,7 @@ Para testear todas las rutas en Postman:
 
 > Campos a rellenar en body (form-data):
 
--code : code de una de las Skins disponibles según listado, y que el usuario todavía no tenga.
+- code : code de una de las Skins disponibles según listado, y que el usuario todavía no tenga.
 
 > Devuelve un mensaje de confirmación.
 
@@ -112,6 +114,8 @@ Para testear todas las rutas en Postman:
 
 - Authorization : Bearer <aquí copiar token>
 - Accept: application/json
+
+> La id debe ser la de una de las skins compradas por el usuario autentificado y guardadas en la base de datos.
 
 > Devuelve un mensaje de confirmación.
 
@@ -196,6 +200,8 @@ En la terminal, escribir:
 
 ## Testeando desde Postman
 
+Abrir la base de datos **skins_backend** en **phpMyAdmin** para poder ir haciendo consultas.
+ 
 In terminal Visual Studio Code, run:
 
 ```php artisan migrate```
@@ -206,10 +212,10 @@ In terminal Visual Studio Code, run:
 
 ## Nota (*)
 
-Si se desea testear el método que envia un **email con enlace de pago** al usuario al realizar la compra:
+Si se desea testear el método que envia un **email con enlace de pago** cuando un usuario realizar una compra:
 
-- descomentar el código correpondiente en el método buy() de SkinController.
-- abrir cuenta propia en Mailtrap.
-- configurar archivo .env con datos cuenta propia.
-- ejecutar en Postman el endpoint /skins/buy, y confirmar en Mailtrap que se ha enviado el mail.
+- descomentar el código correpondiente en el método **buy** de **SkinController** (está indicado).
+- abrir cuenta propia en **Mailtrap**.
+- configurar los campos relativos a Mail en el archivo **.env** con los datos  proporcionados por **Mailtrap**.
+- ejecutar en Postman el endpoint **/skins/buy**, y confirmar en Mailtrap que se ha enviado el mail, donde se podrá también visualizar.
 
