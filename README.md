@@ -13,7 +13,7 @@ inconsistencia de datos.
 Solamente se almacenan las Skins compradas por los usuarios, con sus datos de estado: pagada, activa, status de color, status de gadget, 
 más los datos de identificación necesarios.
 
-Incluye tests de la mayoría de las funciones, aunque falta añadir tests de algunas casuísticas.
+Incluye tests de la mayoría de las funciones, aunque se añadirán tests de algunas casuísticas.
 
 No incluye seeders.
 
