@@ -16,17 +16,31 @@ Para testear todas las rutas en Postman:
 ## Endpoints 
 
 #### POST /register
-> Permite registrar a un usuario-
+> Abierto
+> Permite registrar a un usuario. 
 > Campos a rellenar en body (form-data):
 - email
-- nickname
-- password
+- nickname (min:3)
+- password (min:8)
 - password_confirmation
-
+> Devuelve un mensaje de confirmación.
 #### POST /login
+> Abierto
+> Permite acceder a un usuario registrado.
+> Campos a rellenar en body (form-data):
+- email
+- password
+> Devuelve al usuario registrado juto con su access token.
 
 #### POST /logout
->  Descativa el token del usuario.
+> Requiere autentificación.
+> Desactiva el token del usuario.
+> Camos a rellenas en headers:
+- Authorization : Bearer <aquí copiar token>
+- Accept: application/json
+> Campos a rellenar en body (form-data):
+- submit (sin value)
+> Devuelve mensaje de confirmación.
 
 #### GET /skins/available
 
