@@ -85,6 +85,15 @@ Para testear todas las rutas en Postman:
 
 > Requiere autentificación.
 
+> Permite obtener el listado de skins del usuario autentificado
+
+> Campos a rellenar en headers:
+
+- Authorization : Bearer <aquí copiar token>
+- Accept: application/json
+
+> Devuelve un listado de todas las skins que ha adquirido un usuario, incluyendo todos sus datos, incluso los que no se guardan en la base de datos.
+
 ####  DEL /skins/delete/{id} 
 
 > Requiere autentificación.
