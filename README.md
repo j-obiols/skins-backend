@@ -164,19 +164,45 @@ Para testear todas las rutas en Postman:
  
 > Devuelve la Skin actualizada y con todos sus datos, incluso los que no se guardan en la base de datos.
 
-## Instalación del proyecto 
+## Acceso al proyecto
 
 Descargar el repositorio.
 
-Abrir en Visual Studio Code.
+En la terminal de Visual Studio Code terminal, escribir:
 
-En terminal VSC:
+```composer install```
 
-php... 
+```cp .env.example .env``` 
 
-php artisan passport:install
+Editar el .env file, añadiendo el nombre de la base de datos:
 
-php artisan serve
+ ```DB_DATABASE = skins_backend ```
+
+Crear una base de datos vacía en localhost con el mismo nombre.
+
+```php artisan migrate``` 
+
+```php artisan serve```
+
+## Testeando desde Visual Studio Code
+
+En la terminal, escribir:
+
+```php artisan passport:install```
+
+```php artisan test```
+
+(después de testear, y antes de volver a testear, a veces es necesario: ```php artisan cache:clear```)
+
+## Testeando desde Postman
+
+In terminal Visual Studio Code, run:
+
+```php artisan migrate```
+
+```php artisan passport:install```
+
+```php artisan serve``` 
 
 ## Nota (*)
 
