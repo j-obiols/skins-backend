@@ -87,7 +87,7 @@ Para testear todas las rutas en Postman:
 
 > Campos a rellenar en body (form-data):
 
-- code : code de una de las Skins disponibles según listado, y que el usuario todavía no tenga.
+- code : _code de una de las Skins disponibles según listado, y que el usuario todavía no tenga._
 
 > Devuelve un mensaje de confirmación.
 
@@ -127,7 +127,7 @@ Para testear todas las rutas en Postman:
 
 > Campos a rellenar en headers:
 
-- Authorization : Bearer <aquí copiar token>
+- Authorization : Bearer _aquí copiar token_
 - Accept: application/json
 
 > Devuelve la Skin consultada con todos sus datos, incluso los que no se guardan en la base de datos.
@@ -140,13 +140,13 @@ Para testear todas las rutas en Postman:
 
 > Campos a rellenar en headers:
 
-- Authorization : Bearer <aquí copiar token>
+- Authorization : Bearer _aquí copiar token_
 - Accept: application/json
 
 > Campos a rellenar en body (form-data):
 
-- code : code de la Skin de la que se desa cambiar el color.
-- color : nuevo color según colores disponibles de esta Skin.
+- code : _code de la Skin de la que se desa cambiar el color._
+- color : _nuevo color según colores disponibles de esta Skin._
 - _method: put
   
 > Devuelve la Skin actualizada y con todos sus datos, incluso los que no se guardan en la base de datos.
@@ -164,7 +164,7 @@ Para testear todas las rutas en Postman:
 
 > Campos a rellenar en body (form-data):
 
-- code : code de la Skin de la que se desa cambiar el estado del gadget.
+- code : _code de la Skin de la que se desa cambiar el estado del gadget._
  
 > Devuelve la Skin actualizada y con todos sus datos, incluso los que no se guardan en la base de datos.
 
