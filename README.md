@@ -180,7 +180,7 @@ Para testear todas las rutas en **Postman**:
 
 Descargar el repositorio.
 
-**MUY IMPORTANTE: Localizar el archivo skins.json y trasladarlo dentro a la carpeta public, ubicada dentro de storage/app.
+**MUY IMPORTANTE: Localizar el archivo skins.json y trasladarlo dentro de la carpeta public, ubicada dentro de storage/app.
 Si no, no se podrá acceder a los datos de las Skins.**
 
 En la terminal de Visual Studio Code terminal, escribir:
