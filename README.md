@@ -46,6 +46,9 @@ Para testear todas las rutas en **Postman**:
   
 > Devuelve un mensaje de confirmación.
 
+
+![register](https://github.com/j-obiols/skins-backend/assets/127688372/9c564f96-fd65-4095-914f-9413c01d39a8)
+
 ### POST /login 
 
 > No requiere autentificación.
@@ -58,6 +61,8 @@ Para testear todas las rutas en **Postman**:
 - password:  _password de dicho usuario_
   
 > Devuelve al usuario registrado junto con su access token.
+
+![login](https://github.com/j-obiols/skins-backend/assets/127688372/f4f4eabc-0e20-4c9e-9b97-f047b4f7f1c4)
 
 ### POST /logout
 
