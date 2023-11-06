@@ -87,6 +87,8 @@ Para testear todas las rutas en **Postman**:
  
 >  Devuelve un listado de todas las Skins efectivamente disponibles con todos sus datos.
 
+![availableSkins](https://github.com/j-obiols/skins-backend/assets/127688372/29408a06-a925-447e-822f-780c230a2489)
+
 ###  POST /skins/buy
 
 > Requiere autentificación.
