@@ -106,6 +106,8 @@ Para testear todas las rutas en **Postman**:
 
 > Devuelve un mensaje de confirmación.
 
+![buy](https://github.com/j-obiols/skins-backend/assets/127688372/5d92f609-dc83-444f-8c66-cfdbbe00e862)
+
 ###  GET /skins/myskins 
 
 > Requiere autentificación.
