@@ -1,23 +1,31 @@
 ## Skins Backend
 Jump2Digital 2023 Backend Exercise 
 
-**API** que permite a los usuarios **comprar Skins**, que se almacenarán en una base de datos. 
 
-Las Skins disponibles y todos sus datos se leen desde un archivo JSON.  
+**Skins Backend** es una **API** que permite a los usuarios **comprar Skins**, que se almacenarán en una base de datos. 
 
-Este archivo JSON puede ir creciendo, pero para el buen funcionamento de la API es imprescindible que no se eliminen Skins y que no se modifiquen sus códigos.
+Las Skins disponibles y todos sus datos se leen desde un archivo **JSON**, que podrá ir ampliándose.
+Para el buen funcionamento de la API es imprescindible que no se eliminen Skins, y que no se modifiquen sus códigos.
 
-También es imprescindible que todos los campos estén definidos, aunque en la API se han creado métodos de control para evitar 
-inconsistencia de datos. 
+También es imprescindible que todos los campos de cada registro estén definidos. En la API se han creado algunos métodos de control para evitar 
+inconsistencia de datos.
 
-Solamente se almacenan las Skins compradas por los usuarios, con sus datos de estado: pagada, activa, status de color, status de gadget, 
-más los datos de identificación necesarios.
+En la base de datos se almacenan los **Users** y las **Skins compradas por los User**, con una relación de **Uno a Muchos**.
+Las Skins se almacenan solamente con sus datos de estado: pagada ('paid'), activa ('active'), status de color ('colostatus'), status de gadget ('gadgetstatus'), 
+más los datos de identificación necesarios ('id', 'code', 'user_id'). Los otros datos de las Skins se leen directamente desde el archivo JSON, y no se almacenan por dos motivos:
+a) si solamente hubiera la tabla de Skins compradas, en ésta aparecerían muchos campos repetidos, ya que una misma Skin puede ser comprada por muchos usuarios y por lo tanto aparecerá en muchos registros.
+b) si se creara una tercera tabla Skins para almacenar las **Skins** y la tabla **Skins compradas por los User** pasara a ser una tabla intermedia, habría que ir insertando las nuevas Skins o ir actualizando dicha table mediante lecturas del JSON. Parece más lógico y más seguro obtener los datos directamente desde el JSON. 
 
-Incluye tests de la mayoría de las funciones, aunque se añadirán tests de algunas casuísticas.
+Cuando un User adquiriera una Skin, ésta quedaría registrada con los atributos 'paid' y 'active' en 'false', y la API enviaría automáticamente al User un **mail con un enlace de pago.**
+La idea es que cuando el admin (todavía no definido en este punto del proyecto) recibiera la notificación de pago recibido, 
+cambiara estos dos atributos mediante otro endpoint (tampoco definido), para que pasaran a 'true', y así la Skin quedara activada. Si en un plazo de X horas, no se recibiera el pago,
+la Skin quedaría eliminada de la base de datos. La API sí que incluye tanto el método para enviar el mail como el propio mail, y se ha testeado el correcto funcionamiento del método en Mailtrap.   
 
-No incluye seeders.
+Incluye **tests** de la mayoría de las funciones.
 
-Para testear todas las rutas en Postman:
+**No incluye seeders**.
+
+Para testear todas las rutas en **Postman**:
 
 ### http://127.0.0.1:8000/api
 
