@@ -121,6 +121,8 @@ Para testear todas las rutas en **Postman**:
 
 > Devuelve un listado de todas las Skins que ha adquirido un usuario, incluyendo todos sus datos, incluso los que no se guardan en la base de datos.
 
+![userSkins](https://github.com/j-obiols/skins-backend/assets/127688372/ab24cc97-1dc0-4966-810f-1a26564f3446)
+
 ###  DEL /skins/delete/{id} 
 
 > Requiere autentificación.
