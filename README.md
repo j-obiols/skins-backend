@@ -14,7 +14,7 @@ En la base de datos se almacenan los **Users** y las **Skins compradas por los U
 Las Skins se almacenan solamente con sus datos de estado: pagada ('paid'), activa ('active'), status de color ('colostatus'), status de gadget ('gadgetstatus'), 
 más los datos de identificación necesarios ('id', 'code', 'user_id'). Los otros datos de las Skins se leen directamente desde el archivo JSON, y no se almacenan por dos motivos:
 a) si solamente hubiera la tabla de Skins compradas, en ésta aparecerían muchos campos repetidos, ya que una misma Skin puede ser comprada por muchos usuarios y por lo tanto aparecerá en muchos registros.
-b) si se creara una tercera tabla Skins para almacenar las **Skins** y la tabla **Skins compradas por los User** pasara a ser una tabla intermedia, habría que ir insertando las nuevas Skins o ir actualizando dicha table mediante lecturas del JSON. Parece más lógico y más seguro obtener los datos directamente desde el JSON. 
+b) si se creara una tercera tabla Skins para almacenar las **Skins** y la tabla **Skins compradas por los User** pasara a ser una tabla intermedia, habría que ir insertando las nuevas Skins o ir actualizando dicha table mediante lecturas del JSON. Parece más lógico y más seguro obtener los datos siempre actualizados directamente desde el archivo JSON. 
 
 Cuando un User adquiriera una Skin, ésta quedaría registrada con los atributos 'paid' y 'active' en 'false', y la API enviaría automáticamente al User un **mail con un enlace de pago.**
 La idea es que cuando el admin (todavía no definido en este punto del proyecto) recibiera la notificación de pago recibido, 
@@ -33,7 +33,7 @@ Para testear todas las rutas en **Postman**:
 
 ### POST /register
 
-> Abierto
+> No requiere autentificación.
 
 > Permite registrar a un nuevo usuario.
 
@@ -48,7 +48,7 @@ Para testear todas las rutas en **Postman**:
 
 ### POST /login 
 
-> Abierto
+> No requiere autentificación.
 
 > Permite acceder a la aplicación a un usuario registrado.
 
@@ -78,7 +78,7 @@ Para testear todas las rutas en **Postman**:
 
 ### GET /skins/available
 
->  Ruta abierta a todo el público. 
+> No requiere autentificación.
  
 >  Devuelve un listado de todas las Skins efectivamente disponibles con todos sus datos.
 
