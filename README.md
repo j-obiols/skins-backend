@@ -223,10 +223,9 @@ Acceder a Postman y testear los endpoints.
 
 ## Nota (*)
 
-Si se desea testear el método que envia un **email con enlace de pago** cuando un usuario realizar una compra:
-
-- descomentar el código correpondiente en el método **buy** de **SkinController** (está indicado).
+Si se desea testear el método que envia un **email con enlace de pago** cuando un usuario realiza una compra, hay que:
 - abrir cuenta propia en **Mailtrap**.
 - configurar los campos relativos a Mail en el archivo **.env** con los datos  proporcionados por **Mailtrap**.
+- descomentar el código correpondiente en el método **buy** de **SkinController** (está indicado).
 - ejecutar en Postman el endpoint **/skins/buy**, y confirmar en Mailtrap que se ha enviado el mail, donde se podrá también visualizar.
 
