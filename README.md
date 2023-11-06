@@ -54,8 +54,8 @@ Para testear todas las rutas en **Postman**:
 
 > Campos a rellenar en body (form-data):
 
-- email
-- password
+- email:  _email de un usuario registrado_
+- password:  _password de un usuario registrado_
   
 > Devuelve al usuario registrado junto con su access token.
 
