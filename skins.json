@@ -1,202 +1,302 @@
 [
-  {
-    "code": 34594,
-    "name": "Kemp",
-    "type": "outsider",
-    "price": 56,
-    "colors": "blue, orange",
-    "gadget": "wristband"
-  },
-  {
-    "code": 19284,
-    "name": "Levy",
-    "type": "british",
-    "price": 24,
-    "colors": "silver, golden",
-    "gadget": "wristband"
-  },
-  {
-    "code": 11998,
-    "name": "Evans",
-    "type": "british",
-    "price": 27,
-    "colors": "silver, golden",
-    "gadget": "glasses"
-  },
-  {
-    "code": 65749,
-    "name": "Bass",
-    "type": "outsider",
-    "price": 54,
-    "colors": "silver, golden",
-    "gadget": "glasses"
-  },
-  {
-    "code": 28332,
-    "name": "Yates",
-    "type": "classical",
-    "price": 30,
-    "colors": "white, black",
-    "gadget": "wristband"
-  },
-  {
-    "code": 58723,
-    "name": "Ward",
-    "type": "british",
-    "price": 39,
-    "colors": "blue, orange",
-    "gadget": "gloves"
-  },
-  {
-    "code": 75933,
-    "name": "Oconnor",
-    "type": "british",
-    "price": 44,
-    "colors": "white, black",
-    "gadget": "hat"
-  },
-  {
-    "code": 18266,
-    "name": "Hardy",
-    "type": "outsider",
-    "price": 91,
-    "colors": "silver, golden",
-    "gadget": "wristband"
-  },
-  {
-    "code": 80977,
-    "name": "Andrews",
-    "type": "outsider",
-    "price": 80,
-    "colors": "silver, golden",
-    "gadget": "glasses"
-  },
-  {
-    "code": 41723,
-    "name": "Miranda",
-    "type": "outsider",
-    "price": 91,
-    "colors": "silver, golden",
-    "gadget": "glasses"
-  },
-  {
-    "code": 23704,
-    "name": "White",
-    "type": "galactic",
-    "price": 45,
-    "colors": "white, black",
-    "gadget": "wristband"
-  },
-  {
-    "code": 29225,
-    "name": "Jacobs",
-    "type": "legendary",
-    "price": 59,
-    "colors": "silver, golden",
-    "gadget": "wristband"
-  },
-  {
-    "code": 73673,
-    "name": "Gates",
-    "type": "british",
-    "price": 56,
-    "colors": "blue, orange",
-    "gadget": "gloves"
-  },
-  {
-    "code": 14979,
-    "name": "Mcdowell",
-    "type": "outsider",
-    "price": 89,
-    "colors": "silver, golden",
-    "gadget": "gloves"
-  },
-  {
-    "code": 71868,
-    "name": "Parsons",
-    "type": "legendary",
-    "price": 82,
-    "colors": "blue, orange",
-    "gadget": "gloves"
-  },
-  {
-    "code": 49140,
-    "name": "Weber",
-    "type": "galactic",
-    "price": 68,
-    "colors": "white, black",
-    "gadget": "boots"
-  },
-  {
-    "code": 16548,
-    "name": "Chen",
-    "type": "british",
-    "price": 86,
-    "colors": "white, black",
-    "gadget": "wristband"
-  },
-  {
-    "code": 52885,
-    "name": "Williamson",
-    "type": "galactic",
-    "price": 42,
-    "colors": "white, black",
-    "gadget": "hat"
-  },
-  {
-    "code": 48052,
-    "name": "Castro",
-    "type": "galactic",
-    "price": 65,
-    "colors": "white, black",
-    "gadget": "gloves"
-  },
-  {
-    "code": 82905,
-    "name": "Pope",
-    "type": "galactic",
-    "price": 23,
-    "colors": "silver, golden",
-    "gadget": "gloves"
-  },
-  {
-    "code": 61336,
-    "name": "King",
-    "type": "british",
-    "price": 29,
-    "colors": "white, black",
-    "gadget": "wristband"
-  },
-  {
-    "code": 34865,
-    "name": "Dunn",
-    "type": "outsider",
-    "price": 30,
-    "colors": "blue, orange",
-    "gadget": "boots"
-  },
-  {
-    "code": 30347,
-    "name": "Fuentes",
-    "type": "british",
-    "price": 48,
-    "colors": "blue, orange",
-    "gadget": "glasses"
-  },
-  {
-    "code": 85293,
-    "name": "Simon",
-    "type": "british",
-    "price": 24,
-    "colors": "blue, orange",
-    "gadget": "hat"
-  },
-  {
-    "code": 40641,
-    "name": "Alston",
-    "type": "galactic",
-    "price": 94,
-    "colors": "silver, golden",
-    "gadget": "glasses"
-  }
-]
+    {
+      "code": 34594,
+      "name": "Kemp",
+      "type": "outsider",
+      "price": 10,
+      "colors": {
+        "0" : "blue",
+        "1" : "orange"
+      },
+      "gadget": "wristband",
+      "available": true
+    },
+    {
+      "code": 19284,
+      "name": "Levy",
+      "type": "british",
+      "price": 24,
+      "colors": {
+        "0" : "silver",
+        "1" : "golden"
+      },
+      "gadget": "wristband",
+      "available": true
+    },
+    {
+      "code": 11998,
+      "name": "Evans",
+      "type": "british",
+      "price": 27,
+      "colors": {
+        "0" : "silver",
+        "1" : "golden"
+      },
+      "gadget": "glasses",
+      "available": true
+    },
+    {
+      "code": 65749,
+      "name": "Bass",
+      "type": "outsider",
+      "price": 54,
+      "colors": {
+        "0" : "silver",
+        "1" : "golden"
+      },
+      "gadget": "glasses",
+      "available": true
+    },
+    {
+      "code": 28332,
+      "name": "Yates",
+      "type": "classical",
+      "price": 30,
+      "colors": {
+        "0" : "white",
+        "1" : "black"
+      },
+      "gadget": "wristband",
+      "available": true
+    },
+    {
+      "code": 58723,
+      "name": "Ward",
+      "type": "british",
+      "price": 39,
+      "colors": {
+        "0" : "blue",
+        "1" : "orange"
+      },
+      "gadget": "gloves",
+      "available": true
+    },
+    {
+      "code": 75933,
+      "name": "Oconnor",
+      "type": "british",
+      "price": 44,
+      "colors": {
+        "0" : "white",
+        "1" : "black"
+      },
+      "gadget": "hat",
+      "available": true
+    },
+    {
+      "code": 18266,
+      "name": "Hardy",
+      "type": "outsider",
+      "price": 91,
+      "colors": {
+        "0" : "silver",
+        "1" : "golden"
+      },
+      "gadget": "wristband",
+      "available": true
+    },
+    {
+      "code": 80977,
+      "name": "Andrews",
+      "type": "outsider",
+      "price": 80,
+      "colors": {
+        "0" : "silver",
+        "1" : "golden"
+      },
+      "gadget": "glasses",
+      "available": true
+    },
+    {
+      "code": 41723,
+      "name": "Miranda",
+      "type": "outsider",
+      "price": 91,
+      "colors": {
+        "0" : "silver",
+        "1" : "golden"
+      },
+      "gadget": "glasses",
+      "available": true
+    },
+    {
+      "code": 23704,
+      "name": "Emerson",
+      "type": "galactic",
+      "price": 45,
+      "colors": {
+        "0" : "white",
+        "1" : "black"
+      },
+      "gadget": "wristband",
+      "available": true
+    },
+    {
+      "code": 29225,
+      "name": "Jacobs",
+      "type": "legendary",
+      "price": 59,
+      "colors": {
+        "0" : "silver",
+        "1" : "golden"
+      },
+      "gadget": "wristband",
+      "available": true
+    },
+    {
+      "code": 73673,
+      "name": "Gates",
+      "type": "british",
+      "price": 56,
+      "colors": {
+        "0" : "blue",
+        "1" : "orange"
+      },
+      "gadget": "gloves",
+      "available": true
+    },
+    {
+      "code": 14979,
+      "name": "Mcdowell",
+      "type": "outsider",
+      "price": 89,
+      "colors": {
+        "0" : "silver",
+        "1" : "golden"
+      },
+      "gadget": "gloves",
+      "available": true
+    },
+    {
+      "code": 71868,
+      "name": "Parsons",
+      "type": "legendary",
+      "price": 82,
+      "colors": {
+        "0" : "blue",
+        "1" : "orange"
+      },
+      "gadget": "gloves",
+      "available": true
+    },
+    {
+      "code": 49140,
+      "name": "Weber",
+      "type": "galactic",
+      "price": 68,
+      "colors": {
+        "0" : "white",
+        "1" : "black"
+      },
+      "gadget": "boots",
+      "available": true
+    },
+    {
+      "code": 16548,
+      "name": "Michael",
+      "type": "british",
+      "price": 86,
+      "colors": {
+        "0" : "white",
+        "1" : "black"
+      },
+      "gadget": "wristband",
+      "available": false
+    },
+    {
+      "code": 52885,
+      "name": "Sonny",
+      "type": "galactic",
+      "price": 42,
+      "colors": {
+        "0" : "white",
+        "1" : "black"
+      },
+      "gadget": "hat",
+      "available": false
+    },
+    {
+      "code": 48052,
+      "name": "Caroline",
+      "type": "galactic",
+      "price": 65,
+      "colors": {
+        "0" : "white",
+        "1" : "black"
+      },
+      "gadget": "gloves",
+      "available": false
+    },
+    {
+      "code": 82905,
+      "name": "Pope",
+      "type": "galactic",
+      "price": 23,
+      "colors": {
+        "0" : "silver",
+        "1" : "golden"
+      },
+      "gadget": "gloves",
+      "available": true
+    },
+    {
+      "code": 61336,
+      "name": "King",
+      "type": "british",
+      "price": 29,
+      "colors": {
+        "0" : "white",
+        "1" : "black"
+      },
+      "gadget": "wristband",
+      "available": false
+    },
+    {
+      "code": 34865,
+      "name": "Dunn",
+      "type": "outsider",
+      "price": 30,
+      "colors": {
+        "0" : "blue",
+        "1" : "orange"
+      },
+      "gadget": "boots",
+      "available": true
+    },
+    {
+      "code": 30347,
+      "name": "Fuentes",
+      "type": "british",
+      "price": 48,
+      "colors": {
+        "0" : "blue",
+        "1" : "orange"
+      },
+      "gadget": "glasses",
+      "available": false
+    },
+    {
+      "code": 85293,
+      "name": "Simon",
+      "type": "british",
+      "price": 24,
+      "colors": {
+        "0" : "blue",
+        "1" : "orange"
+      },
+      "gadget": "hat",
+      "available": true
+    },
+    {
+      "code": 40641,
+      "name": "Alston",
+      "type": "galactic",
+      "price": 94,
+      "colors": {
+        "0" : "silver",
+        "1" : "golden"
+      },
+      "gadget": "glasses",
+      "available": true
+    }
+] 
