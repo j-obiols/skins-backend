@@ -5,7 +5,7 @@ Jump2Digital 2023 Backend Exercise
 **Skins Backend** es una **API** que permite a los usuarios **comprar Skins**, que se almacenarán en una base de datos. 
 
 Las Skins disponibles y todos sus datos se leen desde un archivo **JSON**, que podrá ir ampliándose.
-Para el buen funcionamento de la API es imprescindible que no se eliminen Skins, y que no se modifiquen sus códigos.
+Para el buen funcionamento de la API es imprescindible que no se eliminen Skins del documento, y que no se modifiquen sus códigos.
 
 También es imprescindible que todos los campos de cada registro estén definidos. En la API se han creado algunos métodos de control para evitar 
 inconsistencia de datos.
@@ -81,6 +81,8 @@ Para testear todas las rutas en **Postman**:
   
 > Devuelve un mensaje de confirmación.
 
+![logout](https://github.com/j-obiols/skins-backend/assets/127688372/329fd3d2-01fa-4d05-8200-f56d454fb7f3)
+
 ### GET /skins/available
 
 > No requiere autentificación.
@@ -138,6 +140,9 @@ Para testear todas las rutas en **Postman**:
 
 > Devuelve un mensaje de confirmación.
 
+![delete](https://github.com/j-obiols/skins-backend/assets/127688372/f2f50869-c567-434d-ba1a-245565a76e4f)
+
+
 ###  GET /skin/getskin/{id} 
 
 > Requiere autentificación.
@@ -150,6 +155,8 @@ Para testear todas las rutas en **Postman**:
 - Accept: application/json
 
 > Devuelve la Skin consultada con todos sus datos, incluso los que no se guardan en la base de datos.
+
+![getSkin](https://github.com/j-obiols/skins-backend/assets/127688372/56ba8ce7-38f1-4177-969e-86ebaad47f69)
 
 ###  POST /skins/color (en rutas está definido PUT como establecía el enunciado)
 
@@ -170,6 +177,8 @@ Para testear todas las rutas en **Postman**:
   
 > Devuelve la Skin actualizada y con todos sus datos, incluso los que no se guardan en la base de datos.
 
+![updateColor](https://github.com/j-obiols/skins-backend/assets/127688372/59e9a1a2-5c77-4a6d-9bc6-0eef95f726be)
+
 ###  POST /skins/gadget 
 
 > Requiere autentificación.
@@ -186,6 +195,9 @@ Para testear todas las rutas en **Postman**:
 - code : _code de la Skin de la que se desa cambiar el estado del gadget._
  
 > Devuelve la Skin actualizada y con todos sus datos, incluso los que no se guardan en la base de datos.
+
+![gadgetStatus](https://github.com/j-obiols/skins-backend/assets/127688372/5ec9f0ef-8a4c-4755-831f-8d8f78361d64)
+
 
 ## Acceso al proyecto
 
