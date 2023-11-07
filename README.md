@@ -208,6 +208,8 @@ Crear una base de datos vacía en localhost con el mismo nombre.
 
 Ejecutar:
 
+```php artisan key:generate```
+
 ```php artisan migrate``` 
 
 ```php artisan passport:install```
