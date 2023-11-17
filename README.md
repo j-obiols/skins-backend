@@ -28,11 +28,12 @@ Incluye **tests** de la mayoría de las funciones.
 
 **No incluye seeders**.
 
-### Deployed. Para testear endpoints en Postman o para consumirlos desde frontend:
+###### [Despliegue en la nube en proceso. Para testear endpoints en Postman o para consumirlos desde frontend, la dirección será:
 
 #### http://skins-backend.fly.dev/api/...
-Ejemplo:
+###### Ya accesible:
 #### http://skins-backend.fly.dev/api/skins/available
+]
 
 ### Para testear los endpoints desde Postman en local:
 
