@@ -28,17 +28,17 @@ Incluye **tests** de la mayoría de las funciones.
 
 **No incluye seeders**.
 
-### Para consumir los endpoints desde frontend:
+### Deployed. Para testear endpoints en Postman o para consumirlos desde frontend:
 
 #### http://skins-backend.fly.dev/api/...
 Ejemplo:
 #### http://skins-backend.fly.dev/api/skins/available
 
-### Para testear todas las rutas en **Postman**:
+### Para testear los endpoints desde Postman en local:
 
 #### http://127.0.0.1:8000/api
 
-### + endpoints:
+### Endpoints:
 
 ### POST /register
 
