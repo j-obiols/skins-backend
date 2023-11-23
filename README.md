@@ -5,7 +5,7 @@
 
 <br>
      
-**Skins es una API que permite a los usuarios **comprar Skins**, que se almacenarán en una base de datos.** 
+**API que permite a los usuarios **comprar Skins**, que se almacenarán en una base de datos.** 
 
 Las Skins disponibles y todos sus datos se leen desde un archivo **JSON**, que podrá ir ampliándose.
 Para el buen funcionamento de la API es imprescindible que no se eliminen Skins del documento, y que no se modifiquen sus códigos.
